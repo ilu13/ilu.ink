@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ilu.ink</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +33,12 @@
       text-align: center;
       box-shadow: 0 20px 50px rgba(255, 182, 193, 0.35);
       max-width: 420px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 70px rgba(255, 182, 193, 0.45);
     }
 
     h1 {
@@ -49,11 +58,27 @@
     }
 
     .tag {
-      margin-top: 26px;
+      margin-top: 22px;
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #aaa;
+    }
+
+    .nav {
+      margin-top: 28px;
+    }
+
+    .nav a {
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: #d6336c;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav a:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -65,7 +90,12 @@
       A quiet corner of the internet.<br />
       Projects, thoughts, and things I’m building.
     </p>
+
     <div class="tag">coming soon</div>
+
+    <div class="nav">
+      <a href="/about.html">about →</a>
+    </div>
   </div>
 </body>
 </html>
